@@ -15,8 +15,12 @@ https://deps.dev/
 https://www.youtube.com/watch?v=T4Df5_cojAs
 
 
-# Zero trust supply chains
+# Zero trust supply chains (sigstore)
 
 https://docs.google.com/document/d/1CRvANkYu0fxJjEZO4KTyyk_1uZm2Q9Nr0ibxplakODg/edit?ts=60b8f2cd&resourcekey=0-nGnWnCni8IpiXim-WreYMg#heading=h.fyy27kd27z1r
 
 https://www.youtube.com/watch?v=gCi9_4NYyR0
+
+https://github.com/sigstore
+
+https://sigstore.dev/
