@@ -35,4 +35,9 @@ https://owasp.org/www-project-zap/
 
 https://portswigger.net/burp
 
+* dvws-node
+
+Damn Vulnerable Web Service (example web app of what not to do - contains many vulnerabilities)
+
+https://github.com/snoopysecurity/dvws-node
 
