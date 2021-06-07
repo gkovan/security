@@ -24,3 +24,15 @@ https://www.youtube.com/watch?v=gCi9_4NYyR0
 https://github.com/sigstore
 
 https://sigstore.dev/
+
+# Web Security Tools
+
+* OWASP ZAP (open source tool)
+
+https://owasp.org/www-project-zap/
+
+* Burp suite (commercial paid product used by professional hackers)
+
+https://portswigger.net/burp
+
+
