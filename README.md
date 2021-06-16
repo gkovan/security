@@ -48,3 +48,7 @@ Damn Vulnerable Web Service (example web app of what not to do - contains many v
 
 https://github.com/snoopysecurity/dvws-node
 
+# Miscellaneous
+
+https://certificate.transparency.dev/howctworks/
+
