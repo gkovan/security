@@ -19,13 +19,13 @@ https://www.youtube.com/watch?v=T4Df5_cojAs
 
 https://docs.google.com/document/d/1CRvANkYu0fxJjEZO4KTyyk_1uZm2Q9Nr0ibxplakODg/edit?ts=60b8f2cd&resourcekey=0-nGnWnCni8IpiXim-WreYMg#heading=h.fyy27kd27z1r
 
-// Dan Lorenc video on Sigstore tools and cosign
+* Dan Lorenc video on Sigstore tools and cosign
 https://www.youtube.com/watch?v=gCi9_4NYyR0
 
-// CNCF Security TAG Supply Chain WG 2021-06-10
+* CNCF Security TAG Supply Chain WG 2021-06-10
 https://www.youtube.com/watch?v=TVNyL2_ljtg
 
-//OCB: Secure your Open Source Supply Chain with Sigstore
+* OCB: Secure your Open Source Supply Chain with Sigstore
 https://www.youtube.com/watch?v=yKrbUGSwrEw
 
 https://sigstore.dev/
