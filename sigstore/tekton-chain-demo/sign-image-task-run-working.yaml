@@ -1,0 +1,51 @@
+apiVersion: tekton.dev/v1beta1
+kind: TaskRun
+metadata:
+  generateName: gk-sign-image
+spec:
+  serviceAccountName: ""
+  taskSpec:
+    resources:
+      inputs:
+      - name: sourcerepo
+        type: git
+      outputs:
+      - name: builtImage
+        type: image
+        targetPath: /workspace/sourcerepo
+    steps:
+    - name: build-and-push
+      image: busybox
+      script: |
+        set -e
+        cat <<EOF > $(inputs.resources.sourcerepo.path)/index.json
+        {
+        "schemaVersion": 2,
+        "manifests": [
+            {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "size": 314,
+            "digest": "sha256:17d5d69790c2acbd02eb8e92df6b7ebca486e0ba6362c1a15b50a02170a5fe99"
+            }
+        ]
+        }
+    - name: echo
+      image: busybox
+      script: cat $(inputs.resources.sourcerepo.path)/index.json
+  resources:
+    inputs:
+    - name: sourcerepo
+      resourceSpec:
+        type: git
+        params:
+        - name: revision
+          value: master
+        - name: url
+          value: https://github.com/redhat-scholars/tekton-tutorial-greeter
+    outputs:
+    - name: builtImage
+      resourceSpec:
+        type: image
+        params:
+        - name: url
+          value: docker.io/gkovan/greeter
