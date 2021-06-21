@@ -51,6 +51,7 @@ https://github.com/snoopysecurity/dvws-node
 # OpenShift/Kubernetes Security
 
 * https://developer.ibm.com/learningpaths/secure-context-constraints-openshift/
+* https://developer.ibm.com/learningpaths/secure-context-constraints-openshift/scc-tutorial/
 
 
 # Miscellaneous
