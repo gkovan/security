@@ -48,6 +48,11 @@ Damn Vulnerable Web Service (example web app of what not to do - contains many v
 
 https://github.com/snoopysecurity/dvws-node
 
+# OpenShift/Kubernetes Security
+
+* https://developer.ibm.com/learningpaths/secure-context-constraints-openshift/
+
+
 # Miscellaneous
 
 https://certificate.transparency.dev/howctworks/
