@@ -32,6 +32,10 @@ https://sigstore.dev/
 
 https://github.com/sigstore
 
+* Integration of sigstore with connaisseur (a kubernetes admission controller)
+https://blog.sigstore.dev/verify-oci-container-image-signatures-in-kubernetes-33663a9ec7d8
+https://github.com/sse-secure-systems/connaisseur
+
 # Integrity Enforcer to run only secure apps on Kubernetes / OpenShift
 
 https://ibm.github.io/integrity-enforcer/README_OVERVIEW.html (need to investigate this)
