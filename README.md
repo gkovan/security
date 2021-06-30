@@ -69,3 +69,6 @@ https://github.com/snoopysecurity/dvws-node
 
 https://certificate.transparency.dev/howctworks/
 
+* Security in Development The IBM Secure Engineering Framework
+https://www.redbooks.ibm.com/redpapers/pdfs/redp4641.pdf
+
