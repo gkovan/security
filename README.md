@@ -39,6 +39,11 @@ https://github.com/dlorenc/cosigned
 https://blog.sigstore.dev/verify-oci-container-image-signatures-in-kubernetes-33663a9ec7d8
 https://github.com/sse-secure-systems/connaisseur
 
+* Maven Central requires PGP signing for artifacts
+** https://kotlinlang.org/docs/security.html
+** https://github.com/junit-team/junit5/commit/729ffce00cfb57a08815f4e5844aa79230704cda
+** https://docs.gradle.org/current/userguide/dependency_verification.html
+
 # Integrity Enforcer to run only secure apps on Kubernetes / OpenShift
 
 https://ibm.github.io/integrity-enforcer/README_OVERVIEW.html (need to investigate this)
