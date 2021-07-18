@@ -1,0 +1,120 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: build-app
+  namespace: tekton-chains-demo
+spec:
+  params:
+    - default: springboot
+      description: the context dir within source
+      name: contextDir
+      type: string
+    - default: 'https://repo.maven.apache.org/maven2/'
+      description: the maven mirrror url
+      name: mavenMirrorUrl
+      type: string
+    - default: $(outputs.resources.builtImage.url)
+      description: the fully qualified image name
+      name: destinationImage
+      type: string
+    - default: Dockerfile
+      description: the docker file to used for building the application
+      name: dockerFile
+      type: string
+    - default: 'false'
+      description: tls verify
+      name: tlsVerify
+      type: string
+  resources:
+    inputs:
+      - name: source
+        type: git
+    outputs:
+      - name: builtImage
+        type: image
+  results:
+    - description: Digest of the image just built.
+      name: IMAGE_DIGEST
+    - description: URL of the image just built.
+      name: IMAGE_URL
+  steps:
+    - args:
+        - '-DskipTests'
+        - clean
+        - package
+      command:
+        - mvn
+      env:
+        - name: user.home
+          value: /home/tekton
+      image: 'docker.io/maven:3.6.3-openjdk-11-slim'
+      name: build-sources
+      resources: {}
+      workingDir: /workspace/source/$(inputs.params.contextDir)
+    - args:
+        - bud
+        - '--layers'
+        - '--storage-driver=vfs'
+        - '-f'
+        - $(inputs.params.dockerFile)
+        - '-t'
+        - $(inputs.params.destinationImage)
+        - .
+      command:
+        - buildah
+      image: quay.io/buildah/stable
+      name: build-image
+      resources: {}
+      securityContext:
+        privileged: true
+        runAsUser: 0
+      volumeMounts:
+        - mountPath: /var/lib/containers
+          name: varlibc
+      workingDir: /workspace/source/$(inputs.params.contextDir)
+    - image: quay.io/buildah/stable
+      name: push-image
+      resources: {}
+      script: |
+        buildah --storage-driver=vfs push \
+        --tls-verify=$(inputs.params.tlsVerify) \
+        --digestfile /tekton/results/IMAGE_DIGEST \
+        $(inputs.params.destinationImage) \
+        docker://$(inputs.params.destinationImage)
+      securityContext:
+        privileged: true
+        runAsUser: 0
+      volumeMounts:
+        - mountPath: /var/lib/containers
+          name: varlibc
+      workingDir: /workspace/source/$(inputs.params.contextDir)
+    - args:
+        - '--version'
+      command:
+        - buildah
+      image: quay.io/buildah/stable
+      name: buildah-version
+      resources: {}
+      securityContext:
+        privileged: true
+      volumeMounts:
+        - mountPath: /var/lib/containers
+          name: varlibc
+      workingDir: /workspace/source/$(inputs.params.contextDir)
+    - image: $(inputs.params.destinationImage)
+      name: cat-of-digest
+      resources: {}
+      script: cat /tekton/results/IMAGE_DIGEST
+      securityContext:
+        privileged: true
+    - image: bash
+      name: write-url
+      resources: {}
+      script: >
+        set -e
+
+        echo $(inputs.params.destinationImage) | tee
+        $(results.IMAGE_URL.path)
+  volumes:
+    - emptyDir: {}
+      name: varlibc
