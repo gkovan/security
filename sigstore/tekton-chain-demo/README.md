@@ -1,12 +1,20 @@
 
-# Steps to recreate the demo
+# Tekton chains demo
+
+
+## Steps to setup and run the demo
+
+Install OpenShift pipelines
+```
+From Operator Hub install OpenShift Pipelines 1.2.3 (this is the version for OCP 4.6)
+```
 
 Create a new project
 ```
 oc new-project tekton-chains-demo
 ```
 
-Creatr a docker registry secret
+Create a docker registry secret
 ```
 create secret docker-registry registry-credentials --docker-server=https://index.docker.io/v2/  --docker-username=gkovan --docker-email=gkovan@hotmail.com --docker-password=my-fake-passwoord -n tekton-chains-demo
 ```
@@ -40,3 +48,5 @@ Verify the image is signed
 ```
 cosign verify -key cosign.pub docker.io/gkovan/greeter
 ```
+
+## Issues
