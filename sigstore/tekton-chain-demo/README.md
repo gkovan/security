@@ -49,6 +49,25 @@ Verify the image is signed
 cosign verify -key cosign.pub docker.io/gkovan/greeter
 ```
 
+Verify TaskRun
+```
+export TASKRUN=<Name of your TaskRun> # Replace with your taskrun name
+```
+
+```
+kubectl get taskrun $TASKRUN
+```
+
+```
+$ export TASKRUN_UID=$(kubectl get taskrun $TASKRUN -o=json | jq -r '.metadata.uid')
+$ kubectl get taskrun $TASKRUN -o=json | jq  -r ".metadata.annotations[\"chains.tekton.dev/payload-taskrun-$TASKRUN_UID\"]" | base64 --decode > payload
+$ kubectl get taskrun $TASKRUN -o=json | jq  -r ".metadata.annotations[\"chains.tekton.dev/signature-taskrun-$TASKRUN_UID\"]" | base64 --decode > signature
+```
+```
+cosign verify-blob -key cosign.pub -signature ./signature ./payload
+```
+
+
 ## Issues
 
 1. Tekton chains was not signing the image the was created and pushed to the registry.
