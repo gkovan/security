@@ -16,7 +16,7 @@ oc new-project tekton-chains-demo
 
 Create a docker registry secret
 ```
-create secret docker-registry registry-credentials --docker-server=https://index.docker.io/v2/  --docker-username=gkovan --docker-email=gkovan@hotmail.com --docker-password=my-fake-passwoord -n tekton-chains-demo
+kubectl create secret docker-registry registry-credentials --docker-server=https://index.docker.io/v2/  --docker-username=gkovan --docker-email=gkovan@hotmail.com --docker-password=my-fake-passwoord -n tekton-chains-demo
 ```
 
 Create a service account
