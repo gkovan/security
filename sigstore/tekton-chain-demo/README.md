@@ -50,3 +50,24 @@ cosign verify -key cosign.pub docker.io/gkovan/greeter
 ```
 
 ## Issues
+
+1. Tekton chains was not signing the image the was created and pushed to the registry.
+
+I add the `digestfile` option in the buildah push command.
+```
+buildah --storage-driver=vfs push \
+--tls-verify=$(inputs.params.tlsVerify) \
+--digestfile /tekton/results/IMAGE_DIGEST \
+$(inputs.params.destinationImage) \
+docker://$(inputs.params.destinationImage)
+```
+
+I also add the results section in the task yaml as follows:
+```
+results:
+  - description: Digest of the image just built.
+    name: IMAGE_DIGEST
+  - description: URL of the image just built.
+    name: IMAGE_URL
+```
+See: https://github.com/tektoncd/chains/blob/main/docs/config.md#chains-type-hinting
