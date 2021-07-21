@@ -77,3 +77,6 @@ https://github.com/snoopysecurity/dvws-node
 * Security in Development The IBM Secure Engineering Framework
 https://www.redbooks.ibm.com/redpapers/pdfs/redp4641.pdf
 
+* Thread modeling in the context of microservice architectures (Stride Model)
+https://developer.ibm.com/articles/threat-modeling-microservices-openshift-4/
+
