@@ -80,3 +80,6 @@ https://www.redbooks.ibm.com/redpapers/pdfs/redp4641.pdf
 * Thread modeling in the context of microservice architectures (Stride Model)
 https://developer.ibm.com/articles/threat-modeling-microservices-openshift-4/
 
+* GitHub deploy keys are more secure then github personal access tokens when used in a pipeline (jenkins, tekton etc.)
+https://docs.github.com/en/developers/overview/managing-deploy-keys
+
