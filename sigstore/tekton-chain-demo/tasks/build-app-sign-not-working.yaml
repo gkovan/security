@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
-  name: build-app
+  name: build-app-sign
 spec:
   params:
     - default: springboot
@@ -125,7 +125,7 @@ spec:
       volumeMounts:
         - mountPath: /var/lib/containers
           name: varlibc
-      workingDir: /workspace/source/$(inputs.params.contextDir)        
+      workingDir: /workspace/source/$(inputs.params.contextDir)
     - args:
         - '--version'
       command:
@@ -139,7 +139,7 @@ spec:
         - mountPath: /var/lib/containers
           name: varlibc
       workingDir: /workspace/source/$(inputs.params.contextDir)
-    - image: $(inputs.params.destinationImage)
+    - image: bash
       name: cat-of-digest
       resources: {}
       script: cat /tekton/results/IMAGE_DIGEST

@@ -100,20 +100,19 @@ spec:
         - mountPath: /var/lib/containers
           name: varlibc
       workingDir: /workspace/source/$(inputs.params.contextDir)
-    - image: $(inputs.params.destinationImage)
+    - image: bash
       name: cat-of-digest
       resources: {}
       script: cat /tekton/results/IMAGE_DIGEST
       securityContext:
         privileged: true
-    - image: bash
+    - image: quay.io/buildah/stable
       name: write-url
       resources: {}
       script: >
         set -e
 
-        echo $(inputs.params.destinationImage) | tee
-        $(results.IMAGE_URL.path)
+        echo $(inputs.params.destinationImage) | tee $(results.IMAGE_URL.path)
   volumes:
     - emptyDir: {}
       name: varlibc

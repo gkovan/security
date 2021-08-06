@@ -60,12 +60,15 @@ kubectl get taskrun $TASKRUN
 
 ```
 $ export TASKRUN_UID=$(kubectl get taskrun $TASKRUN -o=json | jq -r '.metadata.uid')
+
 $ kubectl get taskrun $TASKRUN -o=json | jq  -r ".metadata.annotations[\"chains.tekton.dev/payload-taskrun-$TASKRUN_UID\"]" | base64 --decode > payload
+
 $ kubectl get taskrun $TASKRUN -o=json | jq  -r ".metadata.annotations[\"chains.tekton.dev/signature-taskrun-$TASKRUN_UID\"]" | base64 --decode > signature
 ```
 ```
 cosign verify-blob -key cosign.pub -signature ./signature ./payload
 ```
+
 
 
 ## Issues
@@ -89,4 +92,8 @@ results:
   - description: URL of the image just built.
     name: IMAGE_URL
 ```
+
+-- Issue resolved.
+   With OpenShift Pipelines v 1.2.3 it build-app.yaml works.
+   With the newer versions of Pipelines it does not work.
 See: https://github.com/tektoncd/chains/blob/main/docs/config.md#chains-type-hinting
