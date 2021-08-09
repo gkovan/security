@@ -49,24 +49,35 @@ https://github.com/sse-secure-systems/connaisseur
 https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/
 
 # Integrity Shield - Integrity Enforcer to run only secure apps on Kubernetes / OpenShift
-https://github.com/IBM/integrity-shield
-https://github.com/IBM/integrity-shield/tree/main/admission-controller
-https://ibm.github.io/integrity-enforcer/README_OVERVIEW.html (need to investigate this)
-https://operatorhub.io/operator/integrity-shield-operator
-https://cloud.redhat.com/blog/k8s-integrity-shield-tech-preview-protecting-the-integrity-of-kubernetes-resources-with-signature
+* https://github.com/IBM/integrity-shield
+* https://github.com/IBM/integrity-shield/tree/main/admission-controller
+* https://ibm.github.io/integrity-enforcer/README_OVERVIEW.html (need to investigate this)
+* https://operatorhub.io/operator/integrity-shield-operator
+* https://cloud.redhat.com/blog/k8s-integrity-shield-tech-preview-protecting-the-integrity-of-kubernetes-resources-with-signature
 
-https://cloud.redhat.com/blog/better-kubernetes-security-with-open-policy-agent-opa-part-1
-https://cloud.redhat.com/blog/better-kubernetes-security-with-open-policy-agent-opa-part-2
+* https://cloud.redhat.com/blog/better-kubernetes-security-with-open-policy-agent-opa-part-1
+* https://cloud.redhat.com/blog/better-kubernetes-security-with-open-policy-agent-opa-part-2
 
 
 # Open Policy Agent Gatekeeper
 
-https://github.com/open-policy-agent/gatekeeper
-https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.3/html/governance/governance#managing-gatekeeper-operator-policies
+* https://github.com/open-policy-agent/gatekeeper
+* https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.3/html/governance/governance#managing-gatekeeper-operator-policies
 
 # Dan Lorenc sample admission contoller
 
-https://github.com/dlorenc/cosigned
+* https://github.com/dlorenc/cosigned
+
+# Connaisseur Admission Controller has support for sigstore cosign
+
+* https://sse-secure-systems.github.io/connaisseur/v2.0.0/
+
+# Kyverno Admission Controller has support for sigstore cosign
+
+* https://github.com/kyverno/kyverno/
+
+# Issue to track work on Deployment policies (i.e. admission controller to verify container image is signed)
+https://github.com/sigstore/cosign/issues/196
 
 # Web Security Tools
 
