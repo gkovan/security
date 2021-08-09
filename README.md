@@ -44,9 +44,29 @@ https://github.com/sse-secure-systems/connaisseur
 - https://github.com/junit-team/junit5/commit/729ffce00cfb57a08815f4e5844aa79230704cda
 - https://docs.gradle.org/current/userguide/dependency_verification.html
 
-# Integrity Enforcer to run only secure apps on Kubernetes / OpenShift
+# Kubernetes Admission Controller
 
+https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/
+
+# Integrity Shield - Integrity Enforcer to run only secure apps on Kubernetes / OpenShift
+https://github.com/IBM/integrity-shield
+https://github.com/IBM/integrity-shield/tree/main/admission-controller
 https://ibm.github.io/integrity-enforcer/README_OVERVIEW.html (need to investigate this)
+https://operatorhub.io/operator/integrity-shield-operator
+https://cloud.redhat.com/blog/k8s-integrity-shield-tech-preview-protecting-the-integrity-of-kubernetes-resources-with-signature
+
+https://cloud.redhat.com/blog/better-kubernetes-security-with-open-policy-agent-opa-part-1
+https://cloud.redhat.com/blog/better-kubernetes-security-with-open-policy-agent-opa-part-2
+
+
+# Open Policy Agent Gatekeeper
+
+https://github.com/open-policy-agent/gatekeeper
+https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.3/html/governance/governance#managing-gatekeeper-operator-policies
+
+# Dan Lorenc sample admission contoller
+
+https://github.com/dlorenc/cosigned
 
 # Web Security Tools
 
