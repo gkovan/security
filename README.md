@@ -32,6 +32,9 @@ https://sigstore.dev/
 
 https://github.com/sigstore
 
+* Cosign image signatures
+https://blog.sigstore.dev/cosign-image-signatures-77bab238a93
+
 * Dan Lorenc built a kube admission controller
 https://github.com/dlorenc/cosigned
 
