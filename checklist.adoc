@@ -31,7 +31,7 @@ This document contains a security checklist.
 ** Enterprise Identity Federation
 **	Web identity federation
 ** Cross account access
-* [ ]	Rotate credentials periodically
+* [ ] Rotate credentials periodically
 ** [ ] For human identities, change passwords periodically 
 ** [ ] Use temporary credentials when possible instead of access keys
 ** [ ] For machine identities, use temporary credentials using IAM roles
