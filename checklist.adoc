@@ -20,7 +20,7 @@ This document contains a security checklist.
 
 * [ ] One IAM User/Identity per pyhisical person
 * [ ] One IAM User/Identity per application
-** [ ] Service accounts in kubernetes
+** Service accounts in kubernetes
 * [ ]	One IAM Role per Application
 * [ ]	IAM credentials are not shared
 * [ ]	IAM credentials are not in code 
