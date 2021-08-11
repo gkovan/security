@@ -19,7 +19,7 @@ This document contains a security checklist.
 == Identity Management 
 
 * [*] checked
-* [x] also checked
+** [x] also checked
 * [ ] not checked
 
 
