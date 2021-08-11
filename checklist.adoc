@@ -14,4 +14,14 @@ This document contains a security checklist.
 * Identity foundation for both humans and machines
 ** TODO - ### description ###
 
+== Account Management ( Cloud Privider such as IBM, AWS, Azure, GCP etc)
+
+== Identity Management 
+
+* [*] checked
+* [x] also checked
+* [ ] not checked
+* normal list item
+
+
 
