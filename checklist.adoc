@@ -35,7 +35,7 @@ This document contains a security checklist.
 ** [ ] For human identities, change passwords periodically 
 ** [ ] Use temporary credentials when possible instead of access keys
 ** [ ] For machine identities, use temporary credentials using IAM roles
-* [ ]	Store and use secrets securely
+* [ ] Store and use secrets securely
 
 * [*] checked
 ** [ ] also checked
