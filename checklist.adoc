@@ -20,13 +20,13 @@ This document contains a security checklist.
 
 * [ ] One IAM User/Identity per pyhisical person
 * [ ] One IAM User/Identity per application
-* [ ]	One IAM Role per Application
+* [ ] One IAM Role per Application
 * [ ]	IAM credentials are not shared
 * [ ]	IAM credentials are not in code 
 * [ ]	ROOT account not used except for initial account setup
 * [ ]	ROOT IAM Credentials not used
 *	[ ] Strong sign in mechanisms
-** [ ]	MFA (multi factor authentication) 
+** [ ] MFA (multi factor authentication) 
 * [ ]	Use temporary (short lived) credentials when appropriate
 ** Enterprise Identity Federation
 **	Web identity federation
