@@ -14,9 +14,11 @@ This document contains a security checklist.
 * Identity foundation for both humans and machines
 ** TODO - ### description ###
 
-== Account Management ( Cloud Privider such as IBM, AWS, Azure, GCP etc)
+== Account Management ( Cloud Privider)
 
-== Identity Management 
+TBD
+
+== Identity Management (Cloud Platform)
 
 * [ ] One IAM User/Identity per pyhisical person
 * [ ] One IAM User/Identity per application
@@ -28,14 +30,28 @@ This document contains a security checklist.
 *	[ ] Strong sign in mechanisms
 ** [ ] MFA (multi factor authentication) 
 * [ ] Use temporary (short lived) credentials when appropriate
-** Enterprise Identity Federation
-**	Web identity federation
-** Cross account access
+** Some examples of when this would be appropriate are:
+*** Enterprise Identity Federation
+***	Web identity federation
+*** Cross account access
 * [ ] Rotate credentials periodically
 ** [ ] For human identities, change passwords periodically 
 ** [ ] Use temporary credentials when possible instead of access keys
 ** [ ] For machine identities, use temporary credentials using IAM roles
 * [ ] Store and use secrets securely
+
+== Identity Management ( OpenShift)
+* [ ] Configure an identity provider
+* [ ] Create a cluster admin user
+* [ ] Remove kubeadmin user
+* [ ] One serviceaccount per application
+* [ ] default service account is not used
+
+== Permission Management
+
+Enforce least privelage access
+
+* [ ] Identity base policies are specified
 
 * [*] checked
 ** [ ] also checked
@@ -43,4 +59,6 @@ This document contains a security checklist.
 * [ ] test test
 
 
+Note:
 
+Cloud Platforms are IBM Cloud, AWS, Azure, GCP
