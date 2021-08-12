@@ -106,7 +106,7 @@ Enforce least privelage access
 TBD
 Need to investigate this more
 
-=== OpenShift harding
+=== OpenShift hardening
 * [ ] etcd encryption
 ** etcd stores all the resources in OpenShift including sensitive data such as secrets, encryption can protect this data
 
