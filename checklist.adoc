@@ -73,6 +73,8 @@ Enforce least privelage access
 ** Applications
 ** CI/CD
 * [ ] Log account activity
+* [ ] Log OpenShift platform activity
+** someone deletes a resource, be able to know who did it
 * [ ] Log application activity
 * [ ] Log CI/CD activity
 * [ ] Analyze logs using a SIEM (security information and event management system)
