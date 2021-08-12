@@ -78,7 +78,7 @@ Enforce least privelage access
 * [ ] Log application activity
 * [ ] Log CI/CD activity
 * [ ] Analyze logs using a SIEM (security information and event management system)
-* [ ] Application Performance Monitoring for all workloads and key transaction
+* [ ] Application Performance Monitoring for all workloads and key transactions
 ** IBM Instana
 * [ ] Implement actionable events – runbook or playbook with instructions on how to investigate and remediate the event
 * [ ] Automate response to events
@@ -114,6 +114,7 @@ Need to investigate this more
 * [ ] Implement in the CI/CD pipeline a combination of manual and automated security gates for promotion to higher environments
 * [ ] Implement separation of duties using roles: _developer_, _release manager_, _DevOps engineer_, etc
 * [ ] A private registry is used to manage images
+* [ ] Restrict registries that can be used for pulling images to only authorized/approved ones
 * [ ] Build images from code repo and store in the private image repository
 * [ ] Ensure logging is enabled from CI/CD process, which shall be preserved for monitoring and for evidence
 * [ ] Perform vulnerability management 
@@ -140,6 +141,7 @@ Need to investigate this more
 ** Sealed secrets in OpenShift encrypts secrets and decrepts them when applied in the cluster
 ** IBM Cloud Secrets Manager
 ** AWS Secrets Manager
+** Hashicorp Vault
 * [ ] Protect microservices from aunauthorized access
 ** Use Oauth2 and Open ID Connect technology
 ** Access tokens for access, ID tokens to identify the user (these tokens are typically JWT)
