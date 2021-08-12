@@ -43,7 +43,7 @@ TBD
 == Identity Management ( OpenShift)
 * [ ] Configure an identity provider
 * [ ] Create a cluster admin user
-* [ ] Remove kubeadmin user
+* [ ] Remove kubeadmin user (default OpenShift cluster admin user)
 * [ ] One serviceaccount per application
 * [ ] default service account is not used
 
