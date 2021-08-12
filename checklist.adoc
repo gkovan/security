@@ -78,6 +78,18 @@ Enforce least privelage access
 * [ ] Implement actionable events – runbook or playbook with instructions on how to investigate and remediate the event
 * [ ] Automate response to events
 
+== Infrastructure Protection (Cloud Platform)
+
+=== Protect Networks
+
+* [ ] Create network layers (subnets within a VPC) for different components of your application stack (microservices, databases etc)
+* [ ] Secure VPC subnets using ACL
+* [ ] Secure instances using Security Groups
+* [ ] Protect web apps and api’s using a web application firewall
+** DDoS
+* [ ] Network traffic on private network when possible
+* [ ] Minimize the number of holes in the network
+
 
 
 * [*] checked
