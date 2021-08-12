@@ -99,8 +99,19 @@ TBD
 Need to investigate this more
 
 
-== Workload Protection
+== Workload and DevSecOps CI/CD Protection
 
+* [ ] Secure Git Workflow for managing application code changes
+** Branch protection
+** Pull request approvals
+* [ ] Secure Git Workflow for managing GitOps changes
+** Branch protection
+** Pull request approvals
+* [ ] Implement in the CI/CD pipeline a combination of manual and automated security gates for promotion to higher environments
+* [ ] Implement separation of duties using roles: _developer_, _release manager_, _DevOps engineer_, etc
+* [ ] A private registry is used to manage images
+* [ ] Build images from code repo and store in the private image repository
+* [ ] Ensure logging is enabled from CI/CD process, which shall be preserved for monitoring and for evidence
 * [ ] Perform vulnerability management 
 ** [ ] Code dependencies
 ** [ ] Container image scanning
@@ -119,12 +130,13 @@ Need to investigate this more
 ** [ ] Validate code signing certificates of binaries and scripts to confirm the author and ensure it has not been tampered with.
 * [ ]  Application/microservice logging
 ** [ ] Do not log sensitive information (PCI, PII etc)
-** [ ] Send logs to SIEM for analysis
+** [ ] Send all logs to SIEM for analysis
 * [ ] Pen testing to validate application security
 * [ ] Store and use secrets securely
 ** Sealed secrets in OpenShift encrypts secrets and decrepts them when applied in the cluster
 ** IBM Cloud Secrets Manager
 ** AWS Secrets Manager
+
 
 
 == Data Protection
