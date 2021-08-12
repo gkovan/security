@@ -95,12 +95,16 @@ Enforce least privelage access
 * [ ] Network traffic on private network when possible
 * [ ] Minimize the number of holes in the network
 
-== Infrastructure Protection (Open Shift)
+== Infrastructure Protection (OpenShift)
 
 === Protect Networks
 
 TBD
 Need to investigate this more
+
+=== OpenShift harding
+* [ ] etcd encryption
+** etcd stores all the resources in OpenShift including sensitive data such as secrets, encryption can protect this data
 
 
 == Workload and DevSecOps CI/CD Protection
@@ -155,12 +159,13 @@ Need to investigate this more
 * [ ] Implement secure key and certificate management
 ** Store encryption keys and certificates securely and roteate them at appropriate intervals with strict access control.
 ** Some solutions are: Cert Manager, IBM Key Protect etc
-* [ ] Enforce encryption in transit
+* [ ] Enforce encryption in transit for network traffic internal to cluster
 ** use HTTPS endpoints using TLS
 ** application code can implement this
 ** alternatively a service mesh such as OpenShift Service Mesh (Istio) can enforce this
 ** use mutual TLS (mTLS) when appropriate
-
+* [ ] Enforce encryption in transit for network traffic entering the cluster
+** Routes/Ingress configured with HTTPS using TLS
 
 === Protect Data at Rest
 
