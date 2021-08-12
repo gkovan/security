@@ -1,7 +1,8 @@
 = Security Checklist
 :reproducible:
 
-This document contains a security checklist.
+This document contains a security checklist for running production workloads on an OpenShift platform.
+
 
 == General Security Principles
 
