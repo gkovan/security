@@ -8,16 +8,6 @@ Gerry Kovan
 This document contains a security checklist for running production workloads on an OpenShift platform.
 
 
-== General Security Principles
-
-* Least privilege access
-** Identities are only permitted to perform the most minimal set of functions necessary to fulfill a specific task
-* Zero trust security
-** Application components including microservices are considered discrete from each other and no component or microservice trusts any other
-* Defense in depth
-** Multiple layers of of security controls are implemented thoughout the system to provide redundancy in the event a security control fails or a vulnerability is exploited
-* Identity foundation for both humans and machines
-
 == Account Management ( Cloud Platform)
 
 * [ ] Seperate workloads by account
@@ -175,6 +165,17 @@ Need to investigate this more
 
 * TODO
 
+== Appendix
+
+=== General Security Principles
+
+* Least privilege access
+** Identities are only permitted to perform the most minimal set of functions necessary to fulfill a specific task
+* Zero trust security
+** Application components including microservices are considered discrete from each other and no component or microservice trusts any other
+* Defense in depth
+** Multiple layers of of security controls are implemented thoughout the system to provide redundancy in the event a security control fails or a vulnerability is exploited
+* Identity foundation for both humans and machines
 
 == Notes:
 
