@@ -16,8 +16,9 @@ This document contains a security checklist for running production workloads on 
 
 == Account Management ( Cloud Platform)
 
-* [ ] Seperate workloads by accounts
+* [ ] Seperate workloads by account
 ** Production workloads should be in a seperate account from development and test workloads
+* [ ] ROOT account not used except for initial account setup
 
 == Identity Management (Cloud Platform)
 
@@ -26,7 +27,6 @@ This document contains a security checklist for running production workloads on 
 * [ ] One IAM Role per Application
 * [ ] IAM credentials are not shared
 * [ ] IAM credentials are not in code 
-* [ ] ROOT account not used except for initial account setup
 * [ ] ROOT IAM Credentials not used
 *	[ ] Strong sign in mechanisms
 ** [ ] MFA (multi factor authentication) 
