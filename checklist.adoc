@@ -126,6 +126,26 @@ Need to investigate this more
 ** IBM Cloud Secrets Manager
 ** AWS Secrets Manager
 
-Notes:
+
+== Data Protection
+
+=== Protect Data in Transit
+
+* [ ] Implement secure key and certificate management
+** Store encryption keys and certificates securely and roteate them at appropriate intervals with strict access control.
+** Some solutions are: Cert Manager, IBM Key Protect etc
+* [ ] Enforce encryption in transit
+** use HTTPS endpoints using TLS
+** application code can implement this
+** alternatively a service mesh such as OpenShift Service Mesh (Istio) can enforce this
+** use mutual TLS (mTLS) when appropriate
+
+
+=== Protect Data at Rest
+
+* TODO
+
+
+== Notes:
 
 Cloud Platforms are IBM Cloud, AWS, Azure, GCP
