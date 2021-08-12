@@ -79,6 +79,11 @@ https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/
 
 * https://github.com/kyverno/kyverno/
 
+# Portieris Admission Controller
+
+* https://github.com/IBM/portieris
+* https://www.ibm.com/cloud/blog/trusted-workloads-signing-container-images-in-your-kubernetes-workflow
+
 # Issue to track work on Deployment policies (i.e. admission controller to verify container image is signed)
 https://github.com/sigstore/cosign/issues/196
 
