@@ -47,11 +47,38 @@ TBD
 * [ ] One serviceaccount per application
 * [ ] default service account is not used
 
-== Permission Management
+== Permission Management (Cloud Platform)
 
 Enforce least privelage access
 
-* [ ] Identity base policies are specified
+* [ ] Identity base policies are specified - specify what the identity (user, group, role) can do
+* [ ] Resource based policies – grants permission for a resource to a principal
+* [ ] Permission boundary policies – set boundaries on maximum permission that can be set
+* [ ] Organization Service Control Policies – defines max permissions at the account organization or organization unit
+
+== Permission Management  (Open Shift)
+
+* [ ] cluser-admin role is not used (except for the principle user who is actually the cluster admin)
+** cluster-admin role in OpenShift can permission to perform all actions on all resources in the cluster
+* [ ] Use Groups to aggregate users and apply RBAC policies
+* [ ] Users have least privelage access
+* [ ] ServiceAccounts have least privelage access
+
+== Detection / Observability
+
+* [ ] Detect unexpected and unwanted configuration changes at all levels of the application stack and delivery lifecycle
+** Infrastructure
+** Services
+** Applications
+** CI/CD
+* [ ] Log account activity
+* [ ] Log application activity
+* [ ] Log CI/CD activity
+* [ ] Analyze logs using a SIEM (security information and event management system)
+* [ ] Implement actionable events – runbook or playbook with instructions on how to investigate and remediate the event
+* [ ] Automate response to events
+
+
 
 * [*] checked
 ** [ ] also checked
