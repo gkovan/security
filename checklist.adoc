@@ -90,6 +90,25 @@ Enforce least privelage access
 * [ ] Network traffic on private network when possible
 * [ ] Minimize the number of holes in the network
 
+== Workload Protection
+
+* [ ] Perform vulnerability management 
+** [ ] Code dependencies
+** [ ] Container image scanning
+** [ ] Virtual machines
+* [ ] Reduce attack surface (reduce exposure to unintended access)
+** [ ] Minimal OS with only required packages installed
+** [ ] Eliminate any code dependencies that are not used
+** [ ] Remove code no longer needed
+* [ ] Use managed services when possible (this probably is not strategic for cloud paks???)
+** In the shared responsibility model, the cloud provider is responsible for patches and any security fixes
+* [ ] Validate software integrity
+** [ ] Digitally sign container images
+** [ ] Validate container image digital signatures before allowing them to run
+** [ ] Validate code signing certificates of binaries and scripts to confirm the author and ensure it has not been tampered with.
+* [ ]  Application/microservice logging
+** [ ] Do not log sensitive information (PCI, PII etc)
+** [ ] Send logs to SIEM for analysis
 
 
 * [*] checked
