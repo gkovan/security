@@ -1,9 +1,12 @@
 = Security Checklist
-:reproducible:
+Gerry Kovan
+:toc:
+
+
+== Introduction
 
 This document contains a security checklist for running production workloads on an OpenShift platform.
 
-:toc:
 
 == General Security Principles
 
