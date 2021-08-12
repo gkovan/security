@@ -177,6 +177,12 @@ Need to investigate this more
 ** Multiple layers of of security controls are implemented thoughout the system to provide redundancy in the event a security control fails or a vulnerability is exploited
 * Identity foundation for both humans and machines
 
+=== Check authorizations in OpenShift using can-i plugin
+```
+oc auth can-i create deployments --namespace dev
+```
+
+
 == Notes:
 
 Cloud Platforms are IBM Cloud, AWS, Azure, GCP
