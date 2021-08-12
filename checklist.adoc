@@ -138,6 +138,9 @@ Need to investigate this more
 ** Sealed secrets in OpenShift encrypts secrets and decrepts them when applied in the cluster
 ** IBM Cloud Secrets Manager
 ** AWS Secrets Manager
+* [ ] Protect microservices from aunauthorized access
+** Use Oauth2 and Open ID Connect technology
+** Access tokens for access, ID tokens to identify the user (these tokens are typically JWT)
 
 
 
