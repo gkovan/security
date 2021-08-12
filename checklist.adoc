@@ -16,7 +16,8 @@ This document contains a security checklist.
 
 == Account Management ( Cloud Platform)
 
-TBD
+* [ ] Seperate workloads by accounts
+** Procution workloads should be in a seperate account from development and test workloads
 
 == Identity Management (Cloud Platform)
 
@@ -90,6 +91,14 @@ Enforce least privelage access
 * [ ] Network traffic on private network when possible
 * [ ] Minimize the number of holes in the network
 
+== Infrastructure Protection (Open Shift)
+
+=== Protect Networks
+
+TBD
+Need to investigate this more
+
+
 == Workload Protection
 
 * [ ] Perform vulnerability management 
@@ -112,6 +121,10 @@ Enforce least privelage access
 ** [ ] Do not log sensitive information (PCI, PII etc)
 ** [ ] Send logs to SIEM for analysis
 * [ ] Pen testing to validate application security
+* [ ] Store and use secrets securely
+** Sealed secrets in OpenShift encrypts secrets and decrepts them when applied in the cluster
+** IBM Cloud Secrets Manager
+** AWS Secrets Manager
 
 Notes:
 
