@@ -76,6 +76,8 @@ Enforce least privelage access
 * [ ] Log application activity
 * [ ] Log CI/CD activity
 * [ ] Analyze logs using a SIEM (security information and event management system)
+* [ ] Application Performance Monitoring for all workloads and key transaction
+** IBM Instana
 * [ ] Implement actionable events – runbook or playbook with instructions on how to investigate and remediate the event
 * [ ] Automate response to events
 
