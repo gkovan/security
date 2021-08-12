@@ -17,7 +17,7 @@ This document contains a security checklist.
 == Account Management ( Cloud Platform)
 
 * [ ] Seperate workloads by accounts
-** Procution workloads should be in a seperate account from development and test workloads
+** Production workloads should be in a seperate account from development and test workloads
 
 == Identity Management (Cloud Platform)
 
