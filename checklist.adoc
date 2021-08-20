@@ -134,7 +134,9 @@ Need to investigate this more
 * [ ]  Application/microservice logging
 ** [ ] Do not log sensitive information (PCI, PII etc)
 ** [ ] Send all logs to SIEM for analysis
-* [ ] Containers run as non root
+* [ ] Build secure container images
+** [ ] Containers run as non root
+** [ ] Use trusted image repositories
 * [ ] Pen testing to validate application security
 * [ ] Store and use secrets securely
 ** Sealed secrets in OpenShift encrypts secrets and decrepts them when applied in the cluster
