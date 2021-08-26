@@ -78,6 +78,7 @@ https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/
 # Kyverno Admission Controller has support for sigstore cosign
 
 * https://github.com/kyverno/kyverno/
+* https://docs.google.com/document/d/1d2Qm47wjjoyGDT8v3_ijB1Q4mGYV5cncAQoQniiR414/edit#heading=h.s8qsd3dl8lqi
 
 # Portieris Admission Controller
 
@@ -123,5 +124,5 @@ https://developer.ibm.com/articles/threat-modeling-microservices-openshift-4/
 https://docs.github.com/en/developers/overview/managing-deploy-keys
 
 * SLSA (pronounced Salsa) - Supply-chain Levels for Software Artifacts
-https://slsa.dev/
+* https://slsa.dev/
 
