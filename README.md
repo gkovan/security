@@ -88,6 +88,9 @@ https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/
 # Issue to track work on Deployment policies (i.e. admission controller to verify container image is signed)
 https://github.com/sigstore/cosign/issues/196
 
+# ArgoCD integration with Sigstore
+* https://github.com/IBM/argocd-interlace
+
 # Web Security Tools
 
 * OWASP ZAP (open source tool)
