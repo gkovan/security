@@ -79,6 +79,7 @@ https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/
 
 * https://github.com/kyverno/kyverno/
 * https://docs.google.com/document/d/1d2Qm47wjjoyGDT8v3_ijB1Q4mGYV5cncAQoQniiR414/edit#heading=h.s8qsd3dl8lqi
+* https://nirmata.com/2021/08/12/kubernetes-supply-chain-policy-management-with-cosign-and-kyverno/
 
 # Portieris Admission Controller
 
