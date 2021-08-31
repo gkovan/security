@@ -111,6 +111,17 @@ https://github.com/snoopysecurity/dvws-node
 
 * https://developer.ibm.com/learningpaths/secure-context-constraints-openshift/
 * https://developer.ibm.com/learningpaths/secure-context-constraints-openshift/scc-tutorial/
+* https://docs.openshift.com/container-platform/4.1/authentication/using-service-accounts-in-applications.html
+* ** To disble the service account secrets being mounted into a pod
+```
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: {{ .Values.name }}
+automountServiceAccountToken: false
+```
+The `automountServiceAccountToken: false` will ensure that the service account secret does not get mounted.
+As a best practice, create a service account per app.
 
 
 # Miscellaneous
