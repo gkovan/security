@@ -35,6 +35,9 @@ https://github.com/sigstore
 * Cosign image signatures
 https://blog.sigstore.dev/cosign-image-signatures-77bab238a93
 
+* How to sign a release of OSS 
+https://blog.sigstore.dev/how-to-sign-a-release-of-oss-e96ee94286fc
+
 * Dan Lorenc built a kube admission controller
 https://github.com/dlorenc/cosigned
 
