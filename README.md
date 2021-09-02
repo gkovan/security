@@ -144,3 +144,6 @@ https://docs.github.com/en/developers/overview/managing-deploy-keys
 * SLSA (pronounced Salsa) - Supply-chain Levels for Software Artifacts
 * https://slsa.dev/
 
+* OSS security scorecard
+* https://github.com/ossf/scorecard
+
