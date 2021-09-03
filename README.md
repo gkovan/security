@@ -32,6 +32,10 @@ https://sigstore.dev/
 
 https://github.com/sigstore
 
+https://www.redhat.com/en/blog/sigstore-open-answer-software-supply-chain-trust-and-security
+
+
+
 * Cosign image signatures
 https://blog.sigstore.dev/cosign-image-signatures-77bab238a93
 
