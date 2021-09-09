@@ -131,6 +131,8 @@ automountServiceAccountToken: false
 The `automountServiceAccountToken: false` will ensure that the service account secret does not get mounted.
 As a best practice, create a service account per app.
 
+* Helm Provenance and Integrity
+** https://helm.sh/docs/topics/provenance/#the-workflow
 
 # Miscellaneous
 
