@@ -34,6 +34,7 @@ https://github.com/sigstore
 
 https://www.redhat.com/en/blog/sigstore-open-answer-software-supply-chain-trust-and-security
 
+* Helm charts for sigstore components:  https://artifacthub.io/packages/search?ts_query_web=sigstore
 
 
 * Cosign image signatures
@@ -48,6 +49,9 @@ https://github.com/dlorenc/cosigned
 * Integration of sigstore with connaisseur (a kubernetes admission controller)
 https://blog.sigstore.dev/verify-oci-container-image-signatures-in-kubernetes-33663a9ec7d8
 https://github.com/sse-secure-systems/connaisseur
+
+* sigstore with ambient credentials and workload identity
+https://dlorenc.medium.com/a-bit-of-ambiance-comes-to-sigstore-f80d1d6b1c30
 
 * Maven Central requires PGP signing for artifacts
 - https://kotlinlang.org/docs/security.html
