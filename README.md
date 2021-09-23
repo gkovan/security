@@ -158,3 +158,5 @@ https://docs.github.com/en/developers/overview/managing-deploy-keys
 * OSS security scorecard
 * https://github.com/ossf/scorecard
 
+* Container terminology
+https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction#
